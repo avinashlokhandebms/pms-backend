@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "PORT": "4000",
+    "MONGO_URI": "mongodb+srv://root:BMS%40root@bms.5ei9r2n.mongodb.net/?retryWrites=true&w=majority&appName=PMS",
+    "JWT_SECRET": "replace-with-a-long-random-string",
+    "WT_EXPIRES_IN": "60m"
+  }
+}
