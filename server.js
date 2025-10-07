@@ -28,7 +28,7 @@ import versionsRouter from "./routes/versionsRoutes.js"
 
 const app = express();
 app.use(cors({
-  origin: ["https://pms-backend-sage.vercel.app/"], // add your dev URL(s)
+    origin: ["http://localhost:3000 , https://pms-backend-sage.vercel.app"], // add your dev URL(s)
   credentials: true,
 }));
 app.use(express.json());
